@@ -3,18 +3,19 @@ const authState = ref<"login" | "signup">("signup");
 const toggleAuthState = () => {
     if (authState.value === "login") authState.value = "signup";
     else authState.value = "login";
-
 }
+const supabase = useSupabase()
 </script>
 
 <template>
     <div class="">
-        <div class="flex flex-col bg-grey-lighter">
+        <div class="flex flex-col bg-grey-lighter">   
             <!-- Login -->
             <div v-if="authState === 'login'"
                 class="container flex flex-col items-center justify-center flex-1 max-w-sm px-2 mx-auto">
                 <div class="w-full px-6 py-8 text-black bg-white rounded shadow-md">
-                    <h1 class="mb-8 text-3xl text-center">Sign In</h1>
+                    <h1 class="mb-8 text-3xl text-center">Sign In         
+                    </h1>
                     <input type="text" class="block w-full p-3 mb-4 border rounded border-grey-light" name="email"
                         placeholder="Email" />
 
