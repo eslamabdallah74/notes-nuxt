@@ -1,0 +1,5 @@
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVneW9vcm9tb3B6cWtqbHhwbnRuIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY2MTc3MzkxNCwiZXhwIjoxOTc3MzQ5OTE0fQ.V5onTJ_66IVKttLYUQubnG1_A1Se0aYxfx3Tlo1B_Yg"; 
+
+const useSupabase = () => {}
+
+export default useSupabase;
