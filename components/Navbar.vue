@@ -1,3 +1,8 @@
+<script setup lang="ts">
+const { signOut, user } = useAuth();
+
+</script>
+
 <template>
     <div>
         <nav id="header" class="top-0 z-30 w-full py-4 mb-10 bg-white border-b border-blue-400 shadow-lg">
@@ -6,6 +11,7 @@
                     <svg class="text-blue-600 fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                         viewBox="0 0 20 20">
                         <title>menu</title>
+
                         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
                     </svg>
                 </label>
@@ -29,11 +35,11 @@
 
                 <div class="flex flex-wrap items-center justify-end order-2 mr-0 md:order-3 md:mr-4" id="nav-content">
                     <div class="flex items-center w-full auth md:w-full">
-                        <button
-                            class="p-2 mr-4 text-gray-800 bg-transparent border border-gray-300 rounded hover:bg-gray-100 hover:text-gray-700">Sign
-                            in</button>
-                        <button class="p-2 text-gray-200 bg-blue-600 rounded hover:bg-blue-500 hover:text-gray-100">Sign
-                            up</button>
+                        <button v-if="user" @click="signOut" 
+                            class="p-2 mr-4 text-gray-800 bg-transparent border border-gray-300 rounded">
+                            Logout</button>
+                        <button v-else class="p-2 mr-4 text-gray-800 bg-transparent border border-gray-300 rounded ">
+                            Sign in</button>
                     </div>
                 </div>
             </div>
@@ -43,7 +49,7 @@
 
 <style  scoped>
 .active {
-    color:blue;
+    color: blue;
 }
 </style>>
     
