@@ -1,6 +1,12 @@
+<script setup lang="ts">
+    definePageMeta({
+        middleware: "auth"
+    })
+    const {user} = useAuth(); 
+</script>
+
 <template>
-    <div>
-        <Navbar />
-        <h2>Profile Page</h2>
+    <div class="text-center">
+        <h2>Profile Page </h2>
     </div>
 </template>

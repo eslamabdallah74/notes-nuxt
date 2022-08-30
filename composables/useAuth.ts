@@ -6,6 +6,7 @@ const useAuth           = () => {
         user.value  = session?.user || null;
     });
 
+
     const signUp  = async ({email,password, ...metadata}) => {
         const {user: signedUpUser, error} = await supabase.auth.signUp({email,password},
             {data: metadata, redirectTo: `${window.location.origin}/profile?verifed=true`});
@@ -22,8 +23,11 @@ const useAuth           = () => {
 
     const signOut = async () => {
         const {error} = await supabase.auth.signOut()
-        if (error) throw error
+        if (error) throw error;
+        return navigateTo("/");
     };
+
+   
 
     return {user,signUp,signIn,signOut};
 

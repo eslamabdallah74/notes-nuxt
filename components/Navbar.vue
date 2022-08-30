@@ -24,11 +24,10 @@ const { signOut, user } = useAuth();
                                 class="inline-block px-4 py-2 text-lg font-medium no-underline hover:text-black lg:-ml-2 active">
                                 <nuxt-link to="/">Home</nuxt-link>
                             </li>
-                            <li
+                            <li 
                                 class="inline-block px-4 py-2 text-lg font-medium no-underline hover:text-black lg:-ml-2">
-                                <nuxt-link to="/notes">Notes</nuxt-link>
+                                <nuxt-link to="/profile">Profile</nuxt-link>
                             </li>
-
                         </ul>
                     </nav>
                 </div>
