@@ -8,7 +8,7 @@ const supabase = useSupabase()
 </script>
 
 <template>
-    <div class="">
+    <div class="mt-10">
         <div class="flex flex-col bg-grey-lighter">
             <div class="container flex flex-col items-center justify-center flex-1 max-w-sm px-2 mx-auto">
                 <div class="w-full px-6 py-8 text-black bg-white rounded shadow-md">

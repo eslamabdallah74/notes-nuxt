@@ -5,7 +5,7 @@ const { signOut, user } = useAuth();
 
 <template>
     <div>
-        <nav id="header" class="top-0 z-30 w-full py-4 mb-10 bg-white border-b border-blue-400 shadow-lg">
+        <nav id="header" class="top-0 z-30 w-full py-4 bg-white border-b border-blue-400 shadow-lg">
             <div class="flex items-center justify-between w-full px-6 py-2 mt-0">
                 <label for="menu-toggle" class="block cursor-pointer md:hidden">
                     <svg class="text-blue-600 fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
