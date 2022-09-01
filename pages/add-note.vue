@@ -7,8 +7,7 @@ const { user } = useAuth();
 </script>
 
 <template>
-    <div class="py-10 text-center text-white bg-slate-500">
-        <h1 class="text-6xl ">Notes</h1>
+    <div class="min-h-screen py-10 text-center bg-slate-500">
         <NotesCard />
     </div>
 </template>

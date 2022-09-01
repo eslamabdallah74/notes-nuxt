@@ -10,7 +10,7 @@ const LogInput         = reactive({
 const login = async () => {
     try {
         await signIn({ email: LogInput.email, password: LogInput.password });
-        router.push('/profile');
+        router.push('/add-note');
     } catch (error) {
         AuthError.value = error.message;
     }
